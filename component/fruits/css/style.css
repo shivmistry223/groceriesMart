@@ -47,3 +47,8 @@
     width: 25px;
     cursor: pointer;
 }
+
+
+.middle .active {
+    color: yellow;
+}
