@@ -144,6 +144,9 @@ function addCart(id) {
     var myObjStr = JSON.stringify([myObj]);
     localStorage.setItem("cart", myObjStr);
   }
+
+  alert("Item has been added to cart")
+  window.location.href = "component/cart/index.html"
 }
 
 function setCarouselData(ITEM = [], id) {

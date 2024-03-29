@@ -47,3 +47,61 @@
     width: 25px;
     cursor: pointer;
 }
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 1200px;
+    padding: 20px;
+    margin-bottom: 200px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.right, .increment, .price, .bill {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.mainButton {
+    padding: 5px 10px;
+}
+
+.checkout {
+    background-color: forestgreen;
+    padding: 30px;
+    border-radius: 8px;
+    position: fixed;
+    width: 100%;
+    max-width: 1200px;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.checkout button {
+  padding: 5px 10px;
+  border: 1px solid yellow;
+  border-radius: 8px;
+  background-color: yellow;
+  color: forestgreen;
+  cursor: pointer;
+}
+
+.bill {
+    color: white;
+}
