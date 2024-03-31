@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Array of product objects
     const products = [
         { 
-            id: "v3",
+            id: "f1",
             name: "Apple, Gala, Sold in singles, 0.13 - 0.18 kg",
             price: "$0.98 each",
             image: "fruit_images/apple.jpg",
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
             weight: " around 200 Gm"
         },
         { 
-            id: "v2",
+            id: "f2",
             name: "Healthy Market Organic Avocados, Pack of 4",
             price: "$5.98 per Bag",
             image: "fruit_images/avocado.jpg",
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
             weight: "around 800 gm"
         },
         {
-            id : "v9",
+            id : "f3",
             name: "Organic Banana, Sold in singles",
             price: "0.85 per piece",
             image: "fruit_images/banana.jpg",
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
             weight: ", 0.15 - 0.24 kg"
         },
         { 
-            id: "v6",
+            id: "f4",
             name: "Blackberries, 170 g",
             price: "$4.98 per container",
             image: "fruit_images/blackberries box.jpg",
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
             weight: "170 gm"
         },
         { 
-            id : "v10",
+            id : "f6",
             name: "Great Value Dragon Fruit",
             price: "$1.98 each",
             image: "fruit_images/dragonfruit.jpg",
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
             weight: "400-500 Gm"
         },
         {
-            id : "v11",
+            id : "f7",
             name: "Black or Red Seedless Grapes, 1 Bag",
             price: "$3.58 per Bag",
             image: "fruit_images/grapes.jpg",
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
             weight: " 1 Kg"
         },
         { 
-            id : "v12",
+            id : "f8",
             name: "Kiwis, 1.3 lbs",
             price: "$1.48 each",
             image: "fruit_images/kiwi.jpg",
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function() {
             weight: "1.3 lbs"
         },
         {
-            id: "v4", 
+            id: "f9", 
             name: "Indian kesar mango",
             price: "$12.52 per box",
             image: "fruit_images/mango.jpg",
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
             weight: "10 lbs"
         },
         {
-            id: "v8",
+            id: "f10",
             name: "Orange, Seedless, Sold in singles",
             price: "$1.23 each",
             image: "fruit_images/orange.jpg",
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function() {
             weight: "0.25 - 0.28 kg"
         },
         { 
-            id : "v13",
+            id : "f11",
             name: "pamegrates",
             price: "$2.16 per lb",
             image: "fruit_images/pamegrates.jpg",
@@ -102,21 +102,21 @@ document.addEventListener("DOMContentLoaded", function() {
             weight: "400gm"
         },
         { 
-            id: "v7",
+            id: "f12",
             name: "Pears",
             price: "$1.68 per lb",
             image: "fruit_images/pears.jpg"
         },
         {
             
-            id: "v14",
+            id: "f13",
             name: "Pineapple, Golden Jumbo",
             price: "$2.78 each",
             image: "fruit_images/pinapple.jpg",
             weight: "2.05-2.29 kg each"
         },
         { 
-            id: "v15",
+            id: "f14",
             name: "Plums",
             price: "$0.98 per lb",
             image: "fruit_images/plum.jpg",
@@ -126,13 +126,13 @@ document.addEventListener("DOMContentLoaded", function() {
             weight: "2 lb"
         },
         { 
-            id: "v16",
+            id: "f15",
             name: "stawberries box",
             price: "$3.98 per box",
             image: "fruit_images/stawberries.jpg"
         },
         {
-            id: "v17",
+            id: "f5",
             name: "Freshi Market Watermelon",
             price: "$2.98 per lb",
             image: "fruit_images/watermelon.jpg"
