@@ -3,265 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vegetables</title>
+    <title>Fruits</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
         <div class="header">
-          <div class="left">
-            <h1>Grocery</h1>
-            <h1>Mart</h1>
-          </div>
-          <div class="middle">
-            <a href="../vegetables/index.html" >Vegetables</a>
-            <a href="../fruits/index.html" class="active">Fruits</a>
-            <a href="../dairy/index.html">Dairy</a>
-            <a href="../bakery/index.html">Bakery</a>
-        </div>
-          <div class="right">
-            <a href="../cart/index.html">
-              <img src="../../images/icons/shopping-cart.png" alt="cart" />
-            </a>
-            <a href="../cart/order.html">
-                <span>Your Orders</span>
-              </a>
-          
-          </div>
+            <div class="left">
+                <h1>Grocery</h1>
+                <h1>Mart</h1>
+              </div>
+              <div class="middle">
+                <a href="../vegetables/index.html" >Vegetables</a>
+                <a href="../fruits/index.html" class="active">Fruits</a>
+                <a href="../dairy/index.html">Dairy</a>
+                <a href="../bakery/index.html">Bakery</a>
+            </div>
+              <div class="right">
+                <a href="../cart/index.html">
+                  <img src="../../images/icons/shopping-cart.png" alt="cart" />
+                </a> 
+                <a href="../cart/order.html">
+                    <span>Your Orders</span>
+                  </a>   
+            </div>
         </div>
         <div class="fruit-section">
-          <h1>Fresh Fruits</h1>
-          <div class="product-container">
-              <div class="product">
-                  <img src="fruit_images/apple.jpg" alt="Product Image" class="product-image">
-                  <div class="product-info">
-                      <h2 class="product-name">Gala Apple</h2>
-                      <p class="product-price">$1.59/lb</p>
-                      <div class="quantity-selector">
-                        <label for="quantity">Quantity:</label>
-                        <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
-                    </div>
-                      <div class="buttons">
-                          <button class="add-to-cart">Add to Cart</button>
-                          <button class="save">Save</button>
-                      </div>
-                  </div>
-              </div>
-              <!-- Add more products here -->
-              <div class="product">
-                  <img src="fruit_images/avocado.jpg" alt="Product Image" class="product-image">
-                  <div class="product-info">
-                      <h2 class="product-name">Organic Avocados,Pack of 4</h2>
-                      <p class="product-price">$6.98 per bag</p>
-                      <div class="quantity-selector">
-                        <label for="quantity">Quantity:</label>
-                        <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
-                    </div>
-                      <div class="buttons">
-                          <button class="add-to-cart">Add to Cart</button>
-                          <button class="save">Save</button>
-                      </div>
-                  </div>
-              </div>
-              <div class="product">
-                  <img src="fruit_images/banana.jpg" alt="Product Image" class="product-image">
-                  <div class="product-info">
-                      <h2 class="product-name">Banana Manzano</h2>
-                      <p class="product-price">$0.29 per piece</p>
-                      <div class="quantity-selector">
-                        <label for="quantity">Quantity:</label>
-                        <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
-                    </div>
-                      <div class="buttons">
-                          <button class="add-to-cart">Add to Cart</button>
-                          <button class="save">Save</button>
-                      </div>
-                  </div>
-              </div>
-              <div class="product">
-                  <img src="fruit_images/blackberries box.jpg" alt="Product Image" class="product-image">
-                  <div class="product-info">
-                      <h2 class="product-name">Blackberries, 270 g</h2>
-                      <p class="product-price">$7.47</p>
-                      <div class="quantity-selector">
-                        <label for="quantity">Quantity:</label>
-                        <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
-                    </div>
-                      <div class="buttons">
-                          <button class="add-to-cart">Add to Cart</button>
-                          <button class="save">Save</button>
-                      </div>
-                  </div>
-              </div>
-              <div class="product">
-                  <img src="fruit_images/watermelon.jpg" alt="Product Image" class="product-image">
-                  <div class="product-info">
-                      <h2 class="product-name">Watermelon,Sold in singles</h2>
-                      <p class="product-price">$5.99 </p>
-                      <div class="quantity-selector">
-                        <label for="quantity">Quantity:</label>
-                        <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
-                    </div>
-                      <div class="buttons">
-                          <button class="add-to-cart">Add to Cart</button>
-                          <button class="save">Save</button>
-                      </div>
-                  </div>
-              </div>
-              <div class="product">
-                  <img src="fruit_images/dragonfruit.jpg" alt="Product Image" class="product-image">
-                  <div class="product-info">
-                      <h2 class="product-name">Dragonfruits</h2>
-                      <p class="product-price">$2.99 per lb</p>
-                      <div class="quantity-selector">
-                        <label for="quantity">Quantity:</label>
-                        <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
-                    </div>
-                      <div class="buttons">
-                          <button class="add-to-cart">Add to Cart</button>
-                          <button class="save">Save</button>
-                      </div>
-                  </div>
-              </div>
-              <div class="product">
-                  <img src="fruit_images/grapes.jpg" alt="Product Image" class="product-image">
-                  <div class="product-info">
-                      <h2 class="product-name">Green & Black grapes</h2>
-                      <p class="product-price">$2.99 per lb</p>
-                      <div class="quantity-selector">
-                        <label for="quantity">Quantity:</label>
-                        <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
-                    </div>
-                      <div class="buttons">
-                          <button class="add-to-cart">Add to Cart</button>
-                          <button class="save">Save</button>
-                      </div>
-                  </div>
-              </div>
-              <div class="product">
-                  <img src="fruit_images/kiwi.jpg" alt="Product Image" class="product-image">
-                  <div class="product-info">
-                      <h2 class="product-name">Golden Kiwi</h2>
-                      <p class="product-price">$2.99 per lb</p>
-                      <div class="quantity-selector">
-                        <label for="quantity">Quantity:</label>
-                        <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
-                    </div>
-                      <div class="buttons">
-                          <button class="add-to-cart">Add to Cart</button>
-                          <button class="save">Save</button>
-                      </div>
-                  </div>
-              </div>
-              <div class="product">
-                  <img src="fruit_images/mango.jpg" alt="Product Image" class="product-image">
-                  <div class="product-info">
-                      <h2 class="product-name">Indian Kesar Mango</h2>
-                      <p class="product-price">$2.99 per lb</p>
-                      <div class="quantity-selector">
-                        <label for="quantity">Quantity:</label>
-                        <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
-                    </div>
-                      <div class="buttons">
-                          <button class="add-to-cart">Add to Cart</button>
-                          <button class="save">Save</button>
-                      </div>
-                  </div>
-              </div>
-              <div class="product">
-                  <img src="fruit_images/orange.jpg" alt="Product Image" class="product-image">
-                  <div class="product-info">
-                      <h2 class="product-name"> Orange without seed</h2>
-                      <p class="product-price">$2.99 per lb</p>
-                      <div class="quantity-selector">
-                        <label for="quantity">Quantity:</label>
-                        <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
-                    </div>
-                      <div class="buttons">
-                          <button class="add-to-cart">Add to Cart</button>
-                          <button class="save">Save</button>
-                      </div>
-                  </div>
-              </div>
-              <div class="product">
-                  <img src="fruit_images/pamegrates.jpg" alt="Product Image" class="product-image">
-                  <div class="product-info">
-                      <h2 class="product-name">pomegranate</h2>
-                      <p class="product-price">$2.99 per lb</p>
-                      <div class="quantity-selector">
-                        <label for="quantity">Quantity:</label>
-                        <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
-                    </div>
-                      <div class="buttons">
-                          <button class="add-to-cart">Add to Cart</button>
-                          <button class="save">Save</button>
-                      </div>
-                  </div>
-              </div>
-              <div class="product">
-                  <img src="fruit_images/pears.jpg" alt="Product Image" class="product-image">
-                  <div class="product-info">
-                      <h2 class="product-name">Pears</h2>
-                      <p class="product-price">$2.99 per lb</p>
-                      <div class="quantity-selector">
-                        <label for="quantity">Quantity:</label>
-                        <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
-                    </div>
-                      <div class="buttons">
-                          <button class="add-to-cart">Add to Cart</button>
-                          <button class="save">Save</button>
-                      </div>
-                  </div>
-              </div>
-              <div class="product">
-                  <img src="fruit_images/pinapple.jpg" alt="Product Image" class="product-image">
-                  <div class="product-info">
-                      <h2 class="product-name">Pinapple</h2>
-                      <p class="product-price">$2.99 per lb</p>
-                      <div class="quantity-selector">
-                        <label for="quantity">Quantity:</label>
-                        <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
-                    </div>
-                      <div class="buttons">
-                          <button class="add-to-cart">Add to Cart</button>
-                          <button class="save">Save</button>
-                      </div>
-                  </div>
-              </div>
-              <div class="product">
-                  <img src="fruit_images/plum.jpg" alt="Product Image" class="product-image">
-                  <div class="product-info">
-                      <h2 class="product-name">Plum</h2>
-                      <p class="product-price">$2.99 per lb</p>
-                      <div class="quantity-selector">
-                        <label for="quantity">Quantity:</label>
-                        <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
-                    </div>
-                      <div class="buttons">
-                          <button class="add-to-cart">Add to Cart</button>
-                          <button class="save">Save</button>
-                      </div>
-                  </div>
-              </div>
-              <div class="product">
-                  <img src="fruit_images/stawberries.jpg" alt="Product Image" class="product-image">
-                  <div class="product-info">
-                      <h2 class="product-name">strawberry</h2>
-                      <p class="product-price">$2.99 per lb</p>
-                      <div class="quantity-selector">
-                        <label for="quantity">Quantity:</label>
-                        <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
-                    </div>
-                      <div class="buttons">
-                          <button class="add-to-cart">Add to Cart</button>
-                          <button class="save">Save</button>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
+            <h1>Fresh Fruits</h1>
+            <div class="product-container" id="product-container">
+                <!-- Product items add here -->
+            </div>
         </div>
-
-        <script src="js/main.js"></script>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
