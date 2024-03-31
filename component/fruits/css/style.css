@@ -61,12 +61,6 @@ body {
     padding: 20px;
     background-color: #f2f2f2;
   }
-.fruit-section h1{
-  text-align: center;
-  font-weight: bolder;
-  color: rgb(134, 0, 58);
-  text-shadow: 2px 2px 4px rgb(0, 255, 110);
-}
   
   .product-container {
     display: flex;
@@ -108,6 +102,7 @@ body {
     font-size: 16px;
     margin-bottom: 10px;
   }
+
   .quantity-selector {
     margin-bottom: 10px;
 }
