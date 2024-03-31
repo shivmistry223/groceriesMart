@@ -164,6 +164,49 @@ const VEGETABLES = [
     img: "../fruits/fruit_images/kiwi.jpg",
     price: 1.59,
   },
+  {
+    id: "f9", 
+    name: "Indian kesar mango",
+    price: 12.52,
+    img: "../fruits/fruit_images/mango.jpg"
+},
+{
+    id: "f10",
+    name: "Orange, Seedless, Sold in singles",
+    price: 1.23,
+    img: "../fruits/fruit_images/orange.jpg"
+},
+{ 
+    id : "f11",
+    name: "pamegrates",
+    price: 2.16,
+    img: "../fruits/fruit_images/pamegrates.jpg"
+},
+{ 
+    id: "f12",
+    name: "Pears",
+    price: 1.68,
+    img: "../fruits/fruit_images/pears.jpg"
+},
+{
+    
+    id: "f13",
+    name: "Pineapple, Golden Jumbo",
+    price: 2.78,
+    img: "../fruits/fruit_images/pinapple.jpg"
+},
+{ 
+    id: "f14",
+    name: "Plums",
+    price: 0.98,
+    img: "../fruits/fruit_images/plum.jpg"
+},
+{ 
+    id: "f15",
+    name: "stawberries box",
+    price: 3.98,
+    img: "../fruits/fruit_images/stawberries.jpg"
+}
 ];
 
 let totalPrice = 0;

@@ -1,170 +1,213 @@
 const VEGETABLES = [
-    {
-      id: "v1",
-      name: "Bitterground",
-      img: "../vegetables/vegetable_image/bitterground.jpg",
-      price: 1.79,
-    },
-  
-    {
-      id: "v2",
-      name: "Cabbage",
-      img: "../vegetables/vegetable_image/cabbage.jpg",
-      price: 2.79,
-    },
-    {
-      id: "v3",
-      name: "Carrtos",
-      img: "../vegetables/vegetable_image/CARROTS_resized.jpg",
-      price: 1.99,
-    },
-    {
-      id: "v4",
-      name: "Cauliflower",
-      img: "../vegetables/vegetable_image/cauliflower.jpg",
-      price: 1.89,
-    },
-    {
-      id: "v5",
-      name: "Chilli",
-      img: "../vegetables/vegetable_image/CHLLI_resized.jpg",
-      price: 1.49,
-    },
-    {
-      id: "v6",
-      name: "Corriander",
-      img: "../vegetables/vegetable_image/CORRIANDER.jpg",
-      price: 2.79,
-    },
-    {
-      id: "v7",
-      name: "Garlic",
-      img: "../vegetables/vegetable_image/GARLIC.jpg",
-      price: 1.79,
-    },
-    {
-      id: "v8",
-      name: "Ginger",
-      img: "../vegetables/vegetable_image/ginger.jpg",
-      price: 1.79,
-    },
   {
-      id : "v9",
-      name: "Corn",
-      price: 3.98,
-      img: "../vegetables/vegetable_image/CORN.jpg",
+    id: "v1",
+    name: "Bitterground",
+    img: "../vegetables/vegetable_image/bitterground.jpg",
+    price: 1.79,
   },
-  { 
-      id : "v10",
-      name: "pappers",
-      price: 2.98,
-      img: "../vegetables/vegetable_image/pappers.jpg"
+
+  {
+    id: "v2",
+    name: "Cabbage",
+    img: "../vegetables/vegetable_image/cabbage.jpg",
+    price: 2.79,
   },
   {
-      id : "v11",
-      name: "Onion Bag",
-      price: 2.98,
-      img: "../vegetables/vegetable_image/ONION_BAG.jpg"
-  },
-  { 
-      id : "v12",
-      name: "Tomatoes",
-      price: 1.98,
-      img: "../vegetables/vegetable_image/TOMATOES.jpg"
-  },
-  { 
-      id : "v13",
-      name: "Egg Plant",
-      price: 1.98,
-      img: "../vegetables/vegetable_image/eggplant.jpg"
-  },
-  { 
-      id: "v7",
-      name: "Garlic",
-      price: 2.98,
-      img: ".../vegetables/vegetable_image/GARLIC.jpg"
+    id: "v3",
+    name: "Carrtos",
+    img: "../vegetables/vegetable_image/CARROTS_resized.jpg",
+    price: 1.99,
   },
   {
-      
-      id: "v14",
-      name: "Potato Bag",
-      price: 2.98,
-      img: ".../vegetables/vegetable_image/patatoes.jpg"
-  },
-  { 
-      id: "v15",
-      name: "Randish",
-      price: 1.98,
-      img: ".../vegetables/vegetable_image/randish.jpg"
-  },
-  { 
-      id: "v16",
-      name: "Lime",
-      price: 2.98,
-      img: ".../vegetables/vegetable_image/lemon.jpg"
+    id: "v4",
+    name: "Cauliflower",
+    img: "../vegetables/vegetable_image/cauliflower.jpg",
+    price: 1.89,
   },
   {
-      id: "v17",
-      name: "Sweet Potatoes",
-      price: 2.98,
-      img: ".../vegetables/vegetable_image/sweet_patatoes.jpg"
+    id: "v5",
+    name: "Chilli",
+    img: "../vegetables/vegetable_image/CHLLI_resized.jpg",
+    price: 1.49,
   },
   {
-      id: "v18",
-      name: "Green Pea",
-      img: ".../vegetables/vegetable_image/greenpeas.jpg",
-      price: 1.49
+    id: "v6",
+    name: "Corriander",
+    img: "../vegetables/vegetable_image/CORRIANDER.jpg",
+    price: 2.79,
   },
-    {
-      id: "f1",
-      name: "Gala Apple",
-      img: "../fruits/fruit_images/apple.jpg",
-      price: 1.59,
-    },
-  
-    {
-      id: "f2",
-      name: "Organic Avacados(4 pack)",
-      img: "../fruits/fruit_images/avocado.jpg",
-      price: 6.98,
-    },
-    {
-      id: "f3",
-      name: "Banana Manzano",
-      img: "../fruits/fruit_images/banana.jpg",
-      price: 0.29,
-    },
-    {
-      id: "f4",
-      name: "Blackberries",
-      img: "../fruits/fruit_images/blackberries box.jpg",
-      price: 7.47,
-    },
-    {
-      id: "f5",
-      name: "Watermelon, Sold in singles",
-      img: "../fruits/fruit_images/watermelon.jpg",
-      price: 5.99,
-    },
-    {
-      id: "f6",
-      name: "Dragonfruits",
-      img: "../fruits/fruit_images/dragonfruit.jpg",
-      price: 2.99,
-    },
-    {
-      id: "f7",
-      name: "Green & Black grapes",
-      img: "../fruits/fruit_images/grapes.jpg",
-      price: 2.99,
-    },
-    {
-      id: "f8",
-      name: "Godlen Kiwi",
-      img: "../fruits/fruit_images/kiwi.jpg",
-      price: 1.59,
-    },
-  ];
+  {
+    id: "v7",
+    name: "Garlic",
+    img: "../vegetables/vegetable_image/GARLIC.jpg",
+    price: 1.79,
+  },
+  {
+    id: "v8",
+    name: "Ginger",
+    img: "../vegetables/vegetable_image/ginger.jpg",
+    price: 1.79,
+  },
+{
+    id : "v9",
+    name: "Corn",
+    price: 3.98,
+    img: "../vegetables/vegetable_image/CORN.jpg",
+},
+{ 
+    id : "v10",
+    name: "pappers",
+    price: 2.98,
+    img: "../vegetables/vegetable_image/pappers.jpg"
+},
+{
+    id : "v11",
+    name: "Onion Bag",
+    price: 2.98,
+    img: "../vegetables/vegetable_image/ONION_BAG.jpg"
+},
+{ 
+    id : "v12",
+    name: "Tomatoes",
+    price: 1.98,
+    img: "../vegetables/vegetable_image/TOMATOES.jpg"
+},
+{ 
+    id : "v13",
+    name: "Egg Plant",
+    price: 1.98,
+    img: "../vegetables/vegetable_image/eggplant.jpg"
+},
+{ 
+    id: "v7",
+    name: "Garlic",
+    price: 2.98,
+    img: ".../vegetables/vegetable_image/GARLIC.jpg"
+},
+{
+    
+    id: "v14",
+    name: "Potato Bag",
+    price: 2.98,
+    img: ".../vegetables/vegetable_image/patatoes.jpg"
+},
+{ 
+    id: "v15",
+    name: "Randish",
+    price: 1.98,
+    img: ".../vegetables/vegetable_image/randish.jpg"
+},
+{ 
+    id: "v16",
+    name: "Lime",
+    price: 2.98,
+    img: ".../vegetables/vegetable_image/lemon.jpg"
+},
+{
+    id: "v17",
+    name: "Sweet Potatoes",
+    price: 2.98,
+    img: ".../vegetables/vegetable_image/sweet_patatoes.jpg"
+},
+{
+    id: "v18",
+    name: "Green Pea",
+    img: ".../vegetables/vegetable_image/greenpeas.jpg",
+    price: 1.49
+},
+  {
+    id: "f1",
+    name: "Gala Apple",
+    img: "../fruits/fruit_images/apple.jpg",
+    price: 1.59,
+  },
+
+  {
+    id: "f2",
+    name: "Organic Avacados(4 pack)",
+    img: "../fruits/fruit_images/avocado.jpg",
+    price: 6.98,
+  },
+  {
+    id: "f3",
+    name: "Banana Manzano",
+    img: "../fruits/fruit_images/banana.jpg",
+    price: 0.29,
+  },
+  {
+    id: "f4",
+    name: "Blackberries",
+    img: "../fruits/fruit_images/blackberries box.jpg",
+    price: 7.47,
+  },
+  {
+    id: "f5",
+    name: "Watermelon, Sold in singles",
+    img: "../fruits/fruit_images/watermelon.jpg",
+    price: 5.99,
+  },
+  {
+    id: "f6",
+    name: "Dragonfruits",
+    img: "../fruits/fruit_images/dragonfruit.jpg",
+    price: 2.99,
+  },
+  {
+    id: "f7",
+    name: "Green & Black grapes",
+    img: "../fruits/fruit_images/grapes.jpg",
+    price: 2.99,
+  },
+  {
+    id: "f8",
+    name: "Godlen Kiwi",
+    img: "../fruits/fruit_images/kiwi.jpg",
+    price: 1.59,
+  },
+  {
+    id: "f9", 
+    name: "Indian kesar mango",
+    price: 12.52,
+    img: "../fruits/fruit_images/mango.jpg"
+},
+{
+    id: "f10",
+    name: "Orange, Seedless, Sold in singles",
+    price: 1.23,
+    img: "../fruits/fruit_images/orange.jpg"
+},
+{ 
+    id : "f11",
+    name: "pamegrates",
+    price: 2.16,
+    img: "../fruits/fruit_images/pamegrates.jpg"
+},
+{ 
+    id: "f12",
+    name: "Pears",
+    price: 1.68,
+    img: "../fruits/fruit_images/pears.jpg"
+},
+{
+    
+    id: "f13",
+    name: "Pineapple, Golden Jumbo",
+    price: 2.78,
+    img: "../fruits/fruit_images/pinapple.jpg"
+},
+{ 
+    id: "f14",
+    name: "Plums",
+    price: 0.98,
+    img: "../fruits/fruit_images/plum.jpg"
+},
+{ 
+    id: "f15",
+    name: "stawberries box",
+    price: 3.98,
+    img: "../fruits/fruit_images/stawberries.jpg"
+}
+];
 
 $(function(){
     const orderItemsString = localStorage.getItem('orderItems');
