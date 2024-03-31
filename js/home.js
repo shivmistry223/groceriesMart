@@ -6,50 +6,50 @@ const VEGETABLES = [
   {
     id: "v1",
     name: "Bitterground",
-    img: "../component/vegetables/vegetable_image/bitterground.jpg",
+    img: "./component/vegetables/vegetable_image/bitterground.jpg",
     price: 1.79,
   },
 
   {
     id: "v2",
     name: "Cabbage",
-    img: "../component/vegetables/vegetable_image/cabbage.jpg",
+    img: "./component/vegetables/vegetable_image/cabbage.jpg",
     price: 2.79,
   },
   {
     id: "v3",
     name: "Carrtos",
-    img: "../component/vegetables/vegetable_image/CARROTS_resized.jpg",
+    img: "./component/vegetables/vegetable_image/CARROTS_resized.jpg",
     price: 1.99,
   },
   {
     id: "v4",
     name: "Cauliflower",
-    img: "../component/vegetables/vegetable_image/cauliflower.jpg",
+    img: "./component/vegetables/vegetable_image/cauliflower.jpg",
     price: 1.89,
   },
   {
     id: "v5",
     name: "Chilli",
-    img: "../component/vegetables/vegetable_image/CHLLI_resized.jpg",
+    img: "./component/vegetables/vegetable_image/CHLLI_resized.jpg",
     price: 1.49,
   },
   {
     id: "v6",
     name: "Corriander",
-    img: "../component/vegetables/vegetable_image/CORRIANDER.jpg",
+    img: "./component/vegetables/vegetable_image/CORRIANDER.jpg",
     price: 2.79,
   },
   {
     id: "v7",
     name: "Garlic",
-    img: "../component/vegetables/vegetable_image/GARLIC.jpg",
+    img: "./component/vegetables/vegetable_image/GARLIC.jpg",
     price: 1.79,
   },
   {
     id: "v8",
     name: "Ginger",
-    img: "../component/vegetables/vegetable_image/ginger.jpg",
+    img: "./component/vegetables/vegetable_image/ginger.jpg",
     price: 1.79,
   },
 ];
@@ -58,50 +58,50 @@ const FRUITS = [
   {
     id: "f1",
     name: "Gala Apple",
-    img: "../component/fruits/fruit_images/apple.jpg",
+    img: "./component/fruits/fruit_images/apple.jpg",
     price: 1.59,
   },
 
   {
     id: "f2",
     name: "Organic Avacados(4 pack)",
-    img: "../component/fruits/fruit_images/avocado.jpg",
+    img: "./component/fruits/fruit_images/avocado.jpg",
     price: 6.98,
   },
   {
     id: "f3",
     name: "Banana Manzano",
-    img: "../component/fruits/fruit_images/banana.jpg",
+    img: "./component/fruits/fruit_images/banana.jpg",
     price: 0.29,
   },
   {
     id: "f4",
     name: "Blackberries",
-    img: "../component/fruits/fruit_images/blackberries box.jpg",
+    img: "./component/fruits/fruit_images/blackberries box.jpg",
     price: 7.47,
   },
   {
     id: "f5",
     name: "Watermelon, Sold in singles",
-    img: "../component/fruits/fruit_images/watermelon.jpg",
+    img: "./component/fruits/fruit_images/watermelon.jpg",
     price: 5.99,
   },
   {
     id: "f6",
     name: "Dragonfruits",
-    img: "../component/fruits/fruit_images/dragonfruit.jpg",
+    img: "./component/fruits/fruit_images/dragonfruit.jpg",
     price: 2.99,
   },
   {
     id: "f7",
     name: "Green & Black grapes",
-    img: "../component/fruits/fruit_images/grapes.jpg",
+    img: "./component/fruits/fruit_images/grapes.jpg",
     price: 2.99,
   },
   {
     id: "f8",
     name: "Godlen Kiwi",
-    img: "../component/fruits/fruit_images/kiwi.jpg",
+    img: "./component/fruits/fruit_images/kiwi.jpg",
     price: 1.59,
   },
 ];
@@ -133,7 +133,7 @@ function addCart(id) {
     var currObj = currData.find((obj) => obj.id == id);
 
     if (currObj) {
-      currObj.quantity = quantity;
+      currObj.quantity = parseInt(currObj.quantity) + parseInt(quantity);
       const currIndex = currData.findIndex((obj) => obj.id == id);
       currData[currIndex] = currObj;
     } else {
@@ -197,7 +197,7 @@ function setData() {
     addCart(productId);
   });
 
-  setSlick();
+  //setSlick();
 }
 
 function setSlick() {

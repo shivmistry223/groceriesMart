@@ -50,3 +50,5 @@ document.addEventListener("DOMContentLoaded", function() {
         console.error("Product details not found in URL parameters.");
     }
 });
+
+
