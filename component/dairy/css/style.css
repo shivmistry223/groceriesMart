@@ -28,11 +28,15 @@ body {
     align-items: center;
 }
 
-.left h1 {
-    font-size: 14px;
-    cursor: pointer;
+.left {
+  text-decoration: none;
 }
 
+.left h1 {
+  font-size: 14px;
+  cursor: pointer;
+  color: white;
+}
 .left h1:nth-child(2){
     color: yellow;
 }
@@ -45,6 +49,17 @@ body {
 .middle a {
     text-decoration: none;
     color: white;
+}
+
+.right {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.right a {
+  color: white;
+  text-decoration: none;
 }
 
 .right img {
@@ -147,5 +162,49 @@ body {
   @media (max-width: 500px) {
     .product {
       width: calc(95% - 20px);
+    }
+  }
+
+  .footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 30px;
+    flex-wrap: wrap;
+    height: 150px;
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  .footer .right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .footer .left {
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer .left h1 {
+    font-size: 30px;
+  }
+  
+  @media (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+    }
+  
+    .footer a {
+        margin: 5px 0;
     }
   }
