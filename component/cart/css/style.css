@@ -4,9 +4,11 @@
     box-sizing: border-box;
 }
 
-.container {
+.container1 {
     display: flex;
     flex-direction: column;
+    max-width: unset !important;
+    padding: unset !important;
 }
 
 .header {
@@ -52,7 +54,8 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     padding: 20px;
     margin-bottom: 200px;
 }
