@@ -3,157 +3,140 @@ document.addEventListener("DOMContentLoaded", function() {
     const products = [
         { 
             id: "v3",
-            name: "Carrots",
-            price: "$1.98 each",
-            image: "./vegetable_image/CARROTS_resized.jpg",
-            origin: "India",
+            name: "Sealtest Homogenized Milk 3.25 percent, ",
+            price: "$6.89",
+            image: "dairy_images/MIlk1.png",
+            origin: "Canada",
             expiredate:"12/04/2024",
             vitamins:"A, B12, B6",
-            weight: "200 Gm"
+            weight: "4 L bag"
         },
         { 
             id: "v2",
-            name: "cabbage",
-            price: "$2.98 per cluster",
-            image: "./vegetable_image/cabbage.jpg",
+            name: "Natrel Fine-filtered 2 percent Milk",
+            price: "$5.38",
+            image: "dairy_images/Chocolate Milk.png",
             origin: "USA",
             expiredate:"18/04/2024",
             vitamins:"B1 , B6",
-            weight: "1 Kg"
+            weight: "2 L"
         },
         {
             id : "v9",
-            name: "Corn",
-            price: "3.98 per cluster",
-            image: "./vegetable_image/CORN.jpg",
+            name: "Sealtest Buttermilk 1 percent",
+            price: "$2.47",
+            image: "dairy_images/Buttermilk.png",
             origin: "Rassia",
-            expiredate:"02/04/2024",
+            expiredate:"10/04/2024",
             vitamins:"C, B2, B6",
-            weight: "800 Gm"
+            weight: "1 L"
         },
         { 
             id: "v6",
-            name: "Corriander",
-            price: "$1.98 each",
-            image: "./vegetable_image/CORRIANDER.jpg",
+            name: "Gay Lea Salted Butter",
+            price: "$4.87",
+            image: "dairy_images/butter.png",
             origin: "Canada",
-            expiredate:"30/03/2024",
+            expiredate:"30/05/2024",
             vitamins:"A, C, B12, B6",
-            weight: "100 Gm"
+            weight: "454 Gm"
         },
         { 
             id : "v10",
-            name: "pappers",
-            price: "$2.98 per cluster",
-            image: "./vegetable_image/pappers.jpg",
+            name: "Great Value Unsalted Butter",
+            price: "$5.48",
+            image: "dairy_images/Butter Unsalted.png",
             origin: "India",
-            expiredate:"15/04/2024",
+            expiredate:"15/05/2024",
             vitamins:"B2, B6",
-            weight: "700 Gm"
+            weight: "454 Gm"
         },
         {
             id : "v11",
-            name: "Onion Bag",
-            price: "$2.98 per cluster",
-            image: "./vegetable_image/ONION_BAG.jpg",
-            origin: "China",
-            expiredate:"12/05/2024",
+            name: "Brar's Malai Paneer",
+            price: "$5.97",
+            image: "dairy_images/Paneer.png",
+            origin: "Canada",
+            expiredate:"23/05/2024",
             vitamins:"B6",
-            weight: " 10 Kg"
+            weight: " 500 gm"
         },
         { 
             id : "v12",
-            name: "Tomatoes",
-            price: "$1.98 each",
-            image: "./vegetable_image/TOMATOES.jpg",
-            origin: "India",
-            expiredate:"12/04/2024",
+            name: "Great Value Old Cheddar Cheese",
+            price: "$4.44",
+            image: "dairy_images/Cheese.png",
+            origin: "USA",
+            expiredate:"22/05/2024",
             vitamins:"A, B12, B6",
-            weight: "200gm"
+            weight: "400 gm"
         },
         {
             id: "v4", 
-            name: "Cauliflower",
-            price: "$2.98 per cluster",
-            image: "./vegetable_image/cauliflower.jpg",
-            origin: "India",
-            expiredate:"12/04/2024",
+            name: "Great Value Pizza Mozzarella Cheese",
+            price: "$5.98",
+            image: "dairy_images/Cheese2.png",
+            origin: "USA",
+            expiredate:"28/05/2024",
             vitamins:"A, B12, B6",
-            weight: "200gm"
+            weight: "400 gm"
         },
         {
             id: "v8",
-            name: "Ginger",
-            price: "$2.98 per cluster",
-            image: "./vegetable_image/ginger.jpg",
+            name: "Great Value Lactose Free Marble Cheddar Cheese",
+            price: "$4.44",
+            image: "dairy_images/Lactos free cheese.png",
             origin: "India",
-            expiredate:"12/04/2024",
+            expiredate:"28/04/2024",
             vitamins:"A, B12, B6",
-            weight: "200gm"
+            weight: "400 gm"
         },
         { 
             id : "v13",
-            name: "Egg Plant",
-            price: "$1.98 each",
-            image: "./vegetable_image/eggplant.jpg",
-            origin: "India",
-            expiredate:"12/04/2024",
+            name: "Astro Original Plain Yogurt 2 percent",
+            price: "$3.28",
+            image: "dairy_images/yogurt1.png",
+            origin: "Canada",
+            expiredate:"22/04/2024",
             vitamins:"A, B12, B6",
-            weight: "200gm"
+            weight: "750 gm"
         },
         { 
             id: "v7",
-            name: "Garlic",
-            price: "$2.98 per cluster",
-            image: "./vegetable_image/GARLIC.jpg"
+            name: "Liberté Greek 0% Yogurt, Plain, High Protein",
+            price: "$5.94",
+            image: "dairy_images/Greek Yogurt.png",
+            weight: " 750 gm"
         },
         {
             
             id: "v14",
-            name: "Potato Bag",
-            price: "$2.98 per cluster",
-            image: "./vegetable_image/patatoes.jpg"
+            name: "BRAR'S PURE DESI GHEE",
+            price: "$22.97",
+            image: "dairy_images/Ghee.png",
+            weight: " 450 gm"
         },
         { 
-            id: "v15",
-            name: "Randish",
-            price: "$1.98 each",
-            image: "./vegetable_image/randish.jpg",
-            origin: "India",
-            expiredate:"12/04/2024",
+            id: "v22",
+            name: "Sealtest Table Cream 18 percent",
+            price: "$4.98",
+            image: "dairy_images/cream.png",
+            origin: "Canada",
+            expiredate:"19/04/2024",
             vitamins:"A, B12, B6",
-            weight: "200gm"
+            weight: " 1 L"
         },
         { 
             id: "v16",
-            name: "Lime",
-            price: "$2.98 per cluster",
-            image: "./vegetable_image/lemon.jpg"
+            name: "Great Value Whipped Topping",
+            price: "$3.48",
+            image: "dairy_images/Whipped Topping.png"
         },
         {
             id: "v17",
-            name: "Sweet Potatoes",
-            price: "$2.98 per cluster",
-            image: "./vegetable_image/sweet_patatoes.jpg"
-        },
-        {
-            id: "v1",
-            name: "Bitterground",
-            image: "./vegetable_image/bitterground.jpg",
-            price: "$1.79 per lb",
-        },
-        {
-            id: "v5",
-            name: "Chilli",
-            image: "./vegetable_image/CHLLI_resized.jpg",
-            price: "$1.49 per lb",
-        }
-        ,
-        {
-            id: "v18",
-            name: "Green Pea",
-            image: "./vegetable_image/greenpeas.jpg",
-            price: "$1.49 per lb",
+            name: "GoldEgg Golden D Vitamin D Enriched Large Eggs",
+            price: "$8.83",
+            image: "dairy_images/Eggs.png"
         }
        
     ];
