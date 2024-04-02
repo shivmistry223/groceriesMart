@@ -36,6 +36,13 @@ body {
   font-size: 14px;
   cursor: pointer;
   color: white;
+  
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: 446px) {
+    font-size: 8px;
+  }
 }
 .left h1:nth-child(2){
     color: yellow;
@@ -49,6 +56,12 @@ body {
 .middle a {
     text-decoration: none;
     color: white;
+    @media screen and (max-width: 767px) {
+      font-size: 12px;
+    }
+    @media screen and (max-width: 446px) {
+      font-size: 8px;
+    }
 }
 
 .right {
@@ -60,6 +73,12 @@ body {
 .right a {
   color: white;
   text-decoration: none;
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: 446px) {
+    font-size: 8px;
+  }
 }
 
 .right img {

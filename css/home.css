@@ -38,6 +38,13 @@ body {
   font-size: 14px;
   cursor: pointer;
   color: white;
+
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: 446px) {
+    font-size: 8px;
+  }
 }
 
 .left h1:nth-child(2) {
@@ -52,6 +59,12 @@ body {
 .middle a {
   text-decoration: none;
   color: white;
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: 446px) {
+    font-size: 8px;
+  }
 }
 .right {
   display: flex;
@@ -62,10 +75,22 @@ body {
 .right a {
   color: white;
   text-decoration: none;
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: 446px) {
+    font-size: 8px;
+  }
 }
 .right img {
   width: 25px;
   cursor: pointer;
+  @media screen and (max-width: 767px) {
+    width: 20px;
+  }
+  @media screen and (max-width: 446px) {
+    width: 18px;
+  }
 }
 
 .carousel-container {
@@ -93,6 +118,13 @@ body {
   width: 100%;
   height: 600px;
   cursor: pointer;
+  @media screen and (max-width: 767px) {
+    height: 400px;
+  }
+  @media screen and (max-width: 446px) {
+    height: 200px;
+  }
+  
 }
 
 .product-slide {

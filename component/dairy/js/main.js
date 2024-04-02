@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Array of product objects
     const products = [
         { 
-            id: "v3",
+            id: "d1",
             name: "Sealtest Homogenized Milk 3.25 percent, ",
             price: "$6.89",
             image: "dairy_images/MIlk1.png",
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
             weight: "4 L bag"
         },
         { 
-            id: "v2",
+            id: "d2",
             name: "Natrel Fine-filtered 2 percent Milk",
             price: "$5.38",
             image: "dairy_images/Chocolate Milk.png",
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
             weight: "2 L"
         },
         {
-            id : "v9",
+            id : "d3",
             name: "Sealtest Buttermilk 1 percent",
             price: "$2.47",
             image: "dairy_images/Buttermilk.png",
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
             weight: "1 L"
         },
         { 
-            id: "v6",
+            id: "d4",
             name: "Gay Lea Salted Butter",
             price: "$4.87",
             image: "dairy_images/butter.png",
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
             weight: "454 Gm"
         },
         { 
-            id : "v10",
+            id : "d5",
             name: "Great Value Unsalted Butter",
             price: "$5.48",
             image: "dairy_images/Butter Unsalted.png",
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
             weight: "454 Gm"
         },
         {
-            id : "v11",
+            id : "d6",
             name: "Brar's Malai Paneer",
             price: "$5.97",
             image: "dairy_images/Paneer.png",
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
             weight: " 500 gm"
         },
         { 
-            id : "v12",
+            id : "d7",
             name: "Great Value Old Cheddar Cheese",
             price: "$4.44",
             image: "dairy_images/Cheese.png",
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function() {
             weight: "400 gm"
         },
         {
-            id: "v4", 
+            id: "d8", 
             name: "Great Value Pizza Mozzarella Cheese",
             price: "$5.98",
             image: "dairy_images/Cheese2.png",
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
             weight: "400 gm"
         },
         {
-            id: "v8",
+            id: "d9",
             name: "Great Value Lactose Free Marble Cheddar Cheese",
             price: "$4.44",
             image: "dairy_images/Lactos free cheese.png",
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function() {
             weight: "400 gm"
         },
         { 
-            id : "v13",
+            id : "d10",
             name: "Astro Original Plain Yogurt 2 percent",
             price: "$3.28",
             image: "dairy_images/yogurt1.png",
@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function() {
             weight: "750 gm"
         },
         { 
-            id: "v7",
+            id: "d11",
             name: "Liberté Greek 0% Yogurt, Plain, High Protein",
             price: "$5.94",
             image: "dairy_images/Greek Yogurt.png",
@@ -110,14 +110,14 @@ document.addEventListener("DOMContentLoaded", function() {
         },
         {
             
-            id: "v14",
+            id: "d12",
             name: "BRAR'S PURE DESI GHEE",
             price: "$22.97",
             image: "dairy_images/Ghee.png",
             weight: " 450 gm"
         },
         { 
-            id: "v22",
+            id: "d13",
             name: "Sealtest Table Cream 18 percent",
             price: "$4.98",
             image: "dairy_images/cream.png",
@@ -127,13 +127,13 @@ document.addEventListener("DOMContentLoaded", function() {
             weight: " 1 L"
         },
         { 
-            id: "v16",
+            id: "d14",
             name: "Great Value Whipped Topping",
             price: "$3.48",
             image: "dairy_images/Whipped Topping.png"
         },
         {
-            id: "v17",
+            id: "d15",
             name: "GoldEgg Golden D Vitamin D Enriched Large Eggs",
             price: "$8.83",
             image: "dairy_images/Eggs.png"

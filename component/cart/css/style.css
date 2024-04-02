@@ -34,6 +34,13 @@
   font-size: 14px;
   cursor: pointer;
   color: white;
+  
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: 446px) {
+    font-size: 8px;
+  }
 }
 
 .left h1:nth-child(2) {
@@ -48,6 +55,12 @@
 .middle a {
   text-decoration: none;
   color: white;
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: 446px) {
+    font-size: 8px;
+  }
 }
 
 .right {
@@ -59,6 +72,12 @@
 .right a {
   color: white;
   text-decoration: none;
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: 446px) {
+    font-size: 8px;
+  }
 }
 
 .right img {
@@ -113,6 +132,7 @@
   bottom: 0;
   display: flex;
   justify-content: space-around;
+  z-index: 2;
 }
 
 .checkout button {
@@ -198,9 +218,10 @@ button:disabled {
   padding: 30px;
   flex-wrap: wrap;
   height: 150px;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
+  z-index: -1;
 }
 
 .footer a {
