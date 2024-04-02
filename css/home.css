@@ -242,7 +242,11 @@ body {
   left: 12px;
     bottom: -36px;
 }
-
+.slick-slide {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
 .footer {
   background-color: #333;
   color: #fff;
