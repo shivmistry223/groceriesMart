@@ -227,7 +227,6 @@ button:disabled {
   position: fixed;
   bottom: 0;
   width: 100%;
-  z-index: -1;
 }
 
 .footer a {
@@ -267,4 +266,11 @@ button:disabled {
   max-width: 1200px;
   width: 100%;
   margin: 10px auto;
+  margin-bottom: 200px;
+}
+
+#orderContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
