@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Array of product objects
-    const products = [
+const products = [
         {
             id: "b1",
             name: "Your Fresh Market All Butter Croissants, 6 croissants",
@@ -168,6 +168,7 @@ document.addEventListener("DOMContentLoaded", function() {
             description: "Treat yourself to the rich and velvety taste of Betty Crocker Red Velvet Cupcakes. Topped with creamy cream cheese frosting, these cupcakes are a decadent delight for any occasion."
           }
         ];
+
 
     const productContainer = document.getElementById("product-container");
 
