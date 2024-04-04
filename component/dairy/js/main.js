@@ -113,7 +113,7 @@ const products = [
         },
         { 
             id: "d11",
-            name: "Liberté Greek 0% Yogurt, Plain, High Protein",
+            name: "Liberté Greek Yogurt 0 percent, Plain, High Protein",
             price: "$5.94",
             image: "dairy_images/Greek Yogurt.png",
             origin: "USA",
