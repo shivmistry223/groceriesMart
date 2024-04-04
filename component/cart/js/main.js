@@ -1,4 +1,4 @@
-const VEGETABLES = [
+const PRODUCTS_LIST = [
   {
     id: "v1",
     name: "Bitterground",
@@ -207,102 +207,187 @@ const VEGETABLES = [
     price: 3.98,
     img: "../fruits/fruit_images/stawberries.jpg"
 },
-{
+{ 
   id: "d1",
-  name: "Sealtest Homogenized",
-  img: "../dairy/dairy_images/MILK1.png",
+  name: "Sealtest Homogenized Milk 3.25 percent, ",
   price: 6.89,
+  img: "../dairy/dairy_imagesdairy_images/MIlk1.png"
 },
-{
+{ 
   id: "d2",
-  name: "Natrel Fine-filtered 2% Milk, 2 L",
-  img: "../dairy/dairy_images/Chocolate Milk.png",
+  name: "Natrel Fine-filtered 2 percent Milk",
   price: 5.38,
+  img: "../dairy/dairy_images/Chocolate Milk.png"
 },
 {
-  id: "d3",
-  name: "Sealtest 1% Buttermilk, 1 L",
-  img: "../dairy/dairy_images/Buttermilk.png",
+  id : "d3",
+  name: "Sealtest Buttermilk 1 percent",
   price: 2.47,
+  img: "../dairy/dairy_images/Buttermilk.png"
 },
-{
+{ 
   id: "d4",
-  name: "Gay Lea Salted Butter, 454 g, 1 lb",
-  img: "../dairy/dairy_images/butter.png",
+  name: "Gay Lea Salted Butter",
   price: 4.87,
+  img: "../dairy/dairy_images/butter.png"
 },
-{
-  id: "d5",
-  name: "Great Value Unsalted Butter, 454 g",
-  img: "../dairy/dairy_images/Butter Unsalted.png",
+{ 
+  id : "d5",
+  name: "Great Value Unsalted Butter",
   price: 5.48,
+  img: "../dairy/dairy_images/Butter Unsalted.png"
 },
 {
-  id: "d6",
-  name: "Brar's Malai Paneer, 375 g",
-  img: "../dairy/dairy_images/Paneer.png",
+  id : "d6",
+  name: "Brar's Malai Paneer",
   price: 5.97,
+  img: "../dairy/dairy_images/Paneer.png"
 },
-{
-  id: "d7",
-  name: "Great Value Old Cheddar Cheese, 400 g",
-  img: "../dairy/dairy_images/Cheese.png",
+{ 
+  id : "d7",
+  name: "Great Value Old Cheddar Cheese",
   price: 4.44,
+  img: "../dairy/dairy_images/Cheese.png"
 },
 {
-  id: "d8",
-  name: "Great Value Pizza Mozzarella Cheese, 400 g",
-  img: "../dairy/dairy_images/Cheese2.png",
+  id: "d8", 
+  name: "Great Value Pizza Mozzarella Cheese",
   price: 5.98,
+  img: "../dairy/dairy_images/Cheese2.png"
+},
+{
+  id: "d9",
+  name: "Great Value Lactose Free Marble Cheddar Cheese",
+  price: 4.44,
+  img: "../dairy/dairy_images/Lactos free cheese.png"
+},
+{ 
+  id : "d10",
+  name: "Astro Original Plain Yogurt 2 percent",
+  price: 3.28,
+  img: "../dairy/dairy_images/yogurt1.png"
+},
+{ 
+  id: "d11",
+  name: "Liberté Greek 0% Yogurt, Plain, High Protein",
+  price: 5.94,
+  img: "../dairy/dairy_images/Greek Yogurt.png"
+},
+{
+  
+  id: "d12",
+  name: "BRAR'S PURE DESI GHEE",
+  price: 22.97,
+  img: "../dairy/dairy_images/Ghee.png"
+},
+{ 
+  id: "d13",
+  name: "Sealtest Table Cream 18 percent",
+  price: 4.98,
+  img: "../dairy/dairy_images/cream.png"
+},
+{ 
+  id: "d14",
+  name: "Great Value Whipped Topping",
+  price: 3.48,
+  img: "../dairy/dairy_images/Whipped Topping.png"
+},
+{
+  id: "d15",
+  name: "GoldEgg Golden D Vitamin D Enriched Large Eggs",
+  price: 8.83,
+  img: "../dairy/dairy_images/Eggs.png"
 },
 {
   id: "b1",
-  name: "All Butter Croissants, 6 croissants, 270 g",
-  img: "../bakery/baakery_images/Croissants.png",
+  name: "Your Fresh Market All Butter Croissants, 6 croissants",
   price: 4.97,
+  img: "../bakery/../bakery/baakery_images/Croissants.png"
 },
 {
   id: "b2",
-  name: "Wonder White Sliced Bread, 675 g",
-  img: "../bakery/baakery_images/white bread.png",
+  name: "Wonder White Sliced Bread",
   price: 2.97,
+  img: "../bakery/baakery_images/white bread.png"
 },
 {
   id: "b3",
-  name: "Dempster’s® White Sliced Bread, 675 g",
-  img: "../bakery/baakery_images/D_white bread.png",
+  name: "Dempster’s® White Sliced Bread",
   price: 3.57,
+  img: "../bakery/baakery_images/D_white bread.png"
 },
 {
   id: "b4",
-  name: "CHIPS AHOY!",
-  img: "../bakery/baakery_images/chips ahoy.png",
+  name: "CHIPS AHOY! Original Chocolate Chip Cookies, Resealable Pack",
   price: 3.48,
+  img: "../bakery/baakery_images/chips ahoy.png"
 },
 {
   id: "b5",
-  name: "CHIPS AHOY!",
-  img: "../bakery/baakery_images/chips ahoy2.png",
+  name: "CHIPS AHOY! Soft Chunky Original Cookies",
   price: 3.48,
+  img: "../bakery/baakery_images/chips ahoy2.png"
 },
 {
   id: "b6",
-  name: "Oreo",
-  img: "../bakery/baakery_images/oreo.png",
+  name: "OREO",
   price: 3.48,
+  img: "../bakery/baakery_images/oreo.png"
 },
 {
   id: "b7",
-  name: "Apple Turnovers, 6 pieces, 504 g",
-  img: "../bakery/baakery_images/turnovers.png",
+  name: "Your Fresh Market Apple Turnovers, 6 pieces",
   price: 4.97,
+  img: "../bakery/baakery_images/turnovers.png"
 },
 {
   id: "b8",
   name: "Banana Bread Chocolate Chip, 8 Pack",
-  img: "../bakery/baakery_images/Banana bread.png",
   price: 4.47,
+  img: "../bakery/baakery_images/Banana bread.png"
 },
+{
+  id: "b9",
+  name: "Your Fresh Market Baked 10' Pumpkin Pie, 10 inch",
+  price: 4.97,
+  img: "../bakery/baakery_images/Pumpkin pie.png",
+},
+{
+  id: "b10",
+  name: "two-bite® Brownies",
+  price: 6.00,
+  img: "../bakery/baakery_images/Brownies.png"
+},
+{
+  id: "b11",
+  name: "Killer Brownie Kitchen Sink Brownies",
+  price: 5.97,
+  img: "../bakery/baakery_images/Brownies2.png"
+},
+{
+  id: "b12",
+  name: "Almond Cake Rusk",
+  price: 4.97,
+  img: "../bakery/baakery_images/Almond Cake.png"
+},
+{
+  id: "b13",
+  name: "Your Fresh Market Chocolate Fudge Cake",
+  price: 6.00,
+  img: "../bakery/baakery_images/cake.png"
+},
+{
+  id: "b14",
+  name: "Quaker Blueberry Buttermilk Flavour Muffin Mix",
+  price: 5.47,
+  img: "../bakery/baakery_images/muffins.png"
+},
+{
+  id: "b15",
+  name: "Betty Crocker Red Velvet Cupcakes with cream cheese flavoured frosting",
+  price: 3.97,
+  img: "../bakery/baakery_images/Red velvet cupcakes.png"
+}
 ];
 
 let totalPrice = 0;
@@ -328,7 +413,7 @@ function getData() {
 
     DATA.forEach(element => {
       // VEGETABLES.find(ele => ele.id == element.id);
-      element = {...VEGETABLES.find(ele => ele.id == element.id), quantity: element.quantity};
+      element = {...PRODUCTS_LIST.find(ele => ele.id == element.id), quantity: element.quantity};
       const itemTotalPrice = Math.round(element.price * element.quantity * 100)/100;
       totalPrice += itemTotalPrice;
       totalPrice = Math.round(totalPrice*100)/100;
