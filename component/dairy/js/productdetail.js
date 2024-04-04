@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const productVitamins = document.getElementById("product-vitamins");
         const productOrigin = document.getElementById("product-origin");
         const productExpiredate = document.getElementById("product-Expiredate");
+        const productdescription = document.getElementById("product-description");
 
         productNameElement.textContent = product.name || "Product Name";
         productPriceElement.textContent = product.price || "Price not available";
@@ -43,6 +44,12 @@ document.addEventListener("DOMContentLoaded", function() {
             productVitamins.textContent = product.vitamins;
         }else{
             productVitamins.textContent = "not data found";
+        }
+
+        if (product.description) {
+            productdescription.textContent = product.description;
+        }else{
+            productdescription.textContent = "not data found";
         }
             
     } else {
