@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Array of product objects
-   const products = [
+    const products = [
         { 
             id: "v3",
             name: "Carrots",
@@ -200,6 +200,7 @@ document.addEventListener("DOMContentLoaded", function() {
             description: "Sweet and tender green peas, great for adding to salads, soups, or stir-fries."
         }
     ];
+
     const productContainer = document.getElementById("product-container");
 
     function addToCart(id) {
@@ -228,15 +229,27 @@ document.addEventListener("DOMContentLoaded", function() {
       }
 
     // Function to handle saving product
-    function saveProduct(product) {
-        console.log("Product saved:", product);
+    function saveProduct(id) {
+            if ($('#' + id).attr("src") === '../../images/icons/heartfill.png') {
+                $('#' + id).attr("src", '../../images/icons/heart.png');
+              } else {
+                $('#' + id).attr("src", '../../images/icons/heartfill.png');
+              }
+            let likedProducts = JSON.parse(localStorage.getItem('likedProducts')) || [];
+            if (likedProducts.includes(id)) {
+                likedProducts = likedProducts.filter(productId => productId !== id);
+                localStorage.setItem('likedProducts', JSON.stringify(likedProducts));
+            } 
+            else {
+                likedProducts.push(id);
+                localStorage.setItem('likedProducts', JSON.stringify(likedProducts));
+            }
     }
 
     // Function to display product details
     function displayProductDetails(product) {
         // Create a modal or navigate to a new page to display product details
-        window.location.href = "productdetail.html?product=" + encodeURIComponent(JSON.stringify(product));
-        // You can customize this function to display product details in a modal or navigate to a new page
+        window.location.href = "productdetail.html?productId=" + encodeURIComponent(JSON.stringify({"id" : product.id}));
     }
 
     // Loop through products array and generate HTML for each product
@@ -265,7 +278,7 @@ document.addEventListener("DOMContentLoaded", function() {
         quantityContainer.classList.add('quantity-selector');
 
         const label = document.createElement('label');
-        label.setAttribute('for', 'quantity');
+        label.setAttribute('for', 'quantity'+product.id);
         label.textContent = 'Quantity: ';
 
         const input = document.createElement('input');
@@ -289,13 +302,15 @@ document.addEventListener("DOMContentLoaded", function() {
         addToCartButton.textContent = "Add to Cart";
         addToCartButton.addEventListener("click", () => addToCart(product.id));
 
-        const saveButton = document.createElement("button");
-        saveButton.classList.add("save");
-        saveButton.textContent = "Save";
-        saveButton.addEventListener("click", () => saveProduct(product));
+        const heartIcon = document.createElement("img");
+        heartIcon.classList.add("heartIcon");
+        heartIcon.id = 'heartIcon' + product.id
+        heartIcon.src = "../../images/icons/heart.png";
+        heartIcon.alt = "Like Image";
+        heartIcon.addEventListener("click", () => saveProduct(heartIcon.id));
 
         buttonsDiv.appendChild(addToCartButton);
-        buttonsDiv.appendChild(saveButton);
+        buttonsDiv.appendChild(heartIcon);
 
         productInfo.appendChild(productName);
         productInfo.appendChild(productPrice);
@@ -310,4 +325,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
         productContainer.appendChild(productDiv);
     });
+    setHeartIcons();
 });
+
+
+const setHeartIcons = ()=>{
+    const likedProducts = JSON.parse(localStorage.getItem('likedProducts')) || [];
+    likedProducts.forEach(productId => {
+        $('#' + productId).attr('src','../../images/icons/heartfill.png');    });
+}

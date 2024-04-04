@@ -51,26 +51,35 @@
         th {
             background-color: #f2f2f2;
         }
+        .addCartDiv{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin: 10px 0px;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
         <div class="header">
-            <div class="left">
+            <a class="left" href="../../index.html">
                 <h1>Grocery</h1>
                 <h1>Mart</h1>
-            </div>
+              </a>
             <div class="middle">
-                <a href="../vegetables/index.html" >Vegetables</a>
-                <a href="../fruits/index.html" >Fruits</a>
+                <a href="../vegetables/index.html" class="active">Vegetables</a>
+                <a href="../fruits/index.html">Fruits</a>
                 <a href="../dairy/index.html">Dairy</a>
-                <a href="../bakery/index.html" class="active">Bakery</a>
+                <a href="../bakery/index.html">Bakery</a>
             </div>
             <div class="right">
                 <a href="../cart/index.html">
                     <img src="../../images/icons/shopping-cart.png" alt="cart" />
                 </a>
+                <a href="../cart/order.html">
+                    <span>Orders</span>
+                  </a>
             </div>
         </div>
     </div>
@@ -107,6 +116,7 @@
             </table>
         </div>
     </div>
+
     <footer class="footer">
         <a class="left" href="./index.html">
           <h1>Grocery</h1>
@@ -119,6 +129,9 @@
           <a href="../bakery/index.html">Bakery</a>
         </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/productdetail.js"></script>
 </body>
+
 </html>
