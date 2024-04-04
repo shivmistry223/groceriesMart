@@ -3,7 +3,7 @@ const products = [
         id: "d1",
         name: "Sealtest Homogenized Milk 3.25 percent",
         price: "$6.89",
-        image: "dairy_images/MIlk1.png",
+        image: "dairy_images/milk.png",
         origin: "Canada",
         expiredate: "12/04/2024",
         vitamins: "A, B12, B6",

@@ -110,7 +110,7 @@ const DAIRY = [
   {
     id: "d1",
     name: "Sealtest Homogenized",
-    img: "./component/dairy/dairy_images/MILK1.png",
+    img: "./component/dairy/dairy_images/milk.png",
     price: 6.89,
   },
   {
