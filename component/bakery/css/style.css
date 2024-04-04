@@ -65,7 +65,7 @@ body {
 
 .right {
   display: flex;
-  gap: 5px;
+  gap: 20px;
   align-items: center;
 }
 
@@ -174,7 +174,7 @@ body {
   }
   
   .heartIcon{
-    width: 10%;
+    width: 8%;
     cursor: pointer;
   }
   
