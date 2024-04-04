@@ -82,37 +82,37 @@ const PRODUCTS_LIST = [
     id: "v7",
     name: "Garlic",
     price: 2.98,
-    img: ".../vegetables/vegetable_image/GARLIC.jpg"
+    img: "../vegetables/vegetable_image/GARLIC.jpg"
 },
 {
     
     id: "v14",
     name: "Potato Bag",
     price: 2.98,
-    img: ".../vegetables/vegetable_image/patatoes.jpg"
+    img: "../vegetables/vegetable_image/patatoes.jpg"
 },
 { 
     id: "v15",
     name: "Randish",
     price: 1.98,
-    img: ".../vegetables/vegetable_image/randish.jpg"
+    img: "../vegetables/vegetable_image/randish.jpg"
 },
 { 
     id: "v16",
     name: "Lime",
     price: 2.98,
-    img: ".../vegetables/vegetable_image/lemon.jpg"
+    img: "../vegetables/vegetable_image/lemon.jpg"
 },
 {
     id: "v17",
     name: "Sweet Potatoes",
     price: 2.98,
-    img: ".../vegetables/vegetable_image/sweet_patatoes.jpg"
+    img: "../vegetables/vegetable_image/sweet_patatoes.jpg"
 },
 {
     id: "v18",
     name: "Green Pea",
-    img: ".../vegetables/vegetable_image/greenpeas.jpg",
+    img: "../vegetables/vegetable_image/greenpeas.jpg",
     price: 1.49
 },
   {
