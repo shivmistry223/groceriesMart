@@ -296,18 +296,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const buttonsDiv = document.createElement("div");
         buttonsDiv.classList.add("buttons");
-
         const addToCartButton = document.createElement("img");
-        addToCartButton.src = "../images/icons/shopping-cart.png"; // Adjust path accordingly
+        addToCartButton.src = '../../images/icons/add-cart.png'; 
         addToCartButton.alt = "Add to Cart";
-        addToCartButton.classList.add("add-to-cart-img"); // Assuming you have or will create CSS for this
+        addToCartButton.classList.add("add-to-cart-img"); 
         addToCartButton.addEventListener("click", () => addToCart(product.id));
-
-        // Set image size
-        addToCartButton.style.width = "40px"; // Set width as per your requirement
-        addToCartButton.style.height = "40px"; // Set height as per your requirement
-        // Set cursor to pointer
-        addToCartButton.style.cursor = "pointer";
 
         const heartIcon = document.createElement("img");
         heartIcon.classList.add("heartIcon");
