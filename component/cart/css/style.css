@@ -94,7 +94,7 @@
 .cart {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   max-width: 1200px;
   width: 100%;
   padding: 20px;
@@ -106,13 +106,35 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
-  border: 1px solid lightgray;
   border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+ 
+  @media screen and (max-width : 974px) {
+    flex-direction: column;
+  }
 }
+
+.cart-item:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 
 .left {
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 474px) {
+    flex-direction: column;
+  }
+}
+
+.right {
+  @media screen and (max-width: 474px) {
+    flex-direction: column;
+  }
 }
 
 .right,
@@ -124,8 +146,13 @@
   gap: 20px;
 }
 
-.mainButton {
+.mainButton, .remove {
   padding: 5px 10px;
+  border: 1px solid forestgreen;
+  border-radius: 8px;
+  background-color: forestgreen;
+  color: white;
+  cursor: pointer;
 }
 
 .checkout {
@@ -273,4 +300,9 @@ button:disabled {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.totalPrice {
+  margin: 0;
+  font-size: 18px;
 }
