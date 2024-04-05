@@ -1,16 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
   // Array of product objects
-  const products = [
+const products = [
     {
         id: "b1",
-        name: "Your Fresh Market All Butter Croissants, 6 croissants",
+        name: "Your Fresh Market All Butter Croissants",
         price: "$4.97",
         image: "baakery_images/Croissants.png",
         vitamins: "Vitamin A, Vitamin B, Vitamin E",
         weight: "270 g",
         origin: "France",
         expiredate: "2024-07-01",
-        description: "Delicious and flaky all-butter croissants, perfect for breakfast or as a snack. Made with high-quality ingredients for a rich and indulgent flavor."
+        description: "Delicious and flaky all-butter croissants this pack have 6 croissants , perfect for breakfast or as a snack. Made with high-quality ingredients for a rich and indulgent flavor."
       },
       {
         id: "b2",
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
       },
       {
         id: "b4",
-        name: "CHIPS AHOY! Original Chocolate Chip Cookies, Resealable Pack",
+        name: "CHIPS AHOY! Chocolate Chip Cookies",
         price: "$3.48",
         image: "baakery_images/chips ahoy.png",
         vitamins: "Iron, Calcium",
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
       },
       {
         id: "b5",
-        name: "CHIPS AHOY! Soft Chunky Original Cookies",
+        name: "CHIPS AHOY! Soft Chunky Cookies",
         price: "$3.48",
         image: "baakery_images/chips ahoy2.png",
         vitamins: "Iron, Calcium",
@@ -70,14 +70,14 @@ document.addEventListener("DOMContentLoaded", function() {
     },
       {
         id: "b7",
-        name: "Your Fresh Market Apple Turnovers, 6 pieces",
+        name: "Your Fresh Market Apple Turnovers",
         price: "$4.97",
         image: "baakery_images/turnovers.png",
         vitamins: "Vitamin C",
-        weight: "504 g",
+        weight: "504 gm and 6 pieces",
         origin: "Canada",
         expiredate: "2024-06-25",
-        description: "Indulge in the sweet and tangy flavor of Your Fresh Market Apple Turnovers. Made with crisp apples and flaky pastry, these turnovers are a delightful dessert or snack."
+        description: "It has 6 pieces.Indulge in the sweet and tangy flavor of Your Fresh Market Apple Turnovers. Made with crisp apples and flaky pastry, these turnovers are a delightful dessert or snack."
       },
       {
         id: "b8",
@@ -92,14 +92,14 @@ document.addEventListener("DOMContentLoaded", function() {
       },
       {
         id: "b9",
-        name: "Your Fresh Market Baked 10' Pumpkin Pie, 10 inch",
+        name: "Baked Pumpkin Pie-10 inch",
         price: "$4.97",
         image: "baakery_images/Pumpkin pie.png",
         vitamins: "Vitamin A, Vitamin C",
         weight: "900 g",
         origin: "Canada",
         expiredate: "2024-06-30",
-        description: "Celebrate the flavors of fall with Your Fresh Market Baked Pumpkin Pie. Made with real pumpkin and a blend of spices, it's a comforting and delicious dessert for any occasion."
+        description: "It is Fresh Market brand product.Celebrate the flavors of fall with Your Fresh Market Baked Pumpkin Pie. Made with real pumpkin and a blend of spices, it's a comforting and delicious dessert for any occasion."
       },
       {
         id: "b10",
@@ -266,10 +266,17 @@ document.addEventListener("DOMContentLoaded", function() {
       const buttonsDiv = document.createElement("div");
       buttonsDiv.classList.add("buttons");
 
-      const addToCartButton = document.createElement("button");
-      addToCartButton.classList.add("add-to-cart");
-      addToCartButton.textContent = "Add to Cart";
+      const addToCartButton = document.createElement("img");
+      addToCartButton.src = "C:\\Users\\meetp\\Downloads\\groceriesMart-8563\\groceriesMart-main\\images\\icons\\add-cart.png"; // Adjust path accordingly
+      addToCartButton.alt = "Add to Cart";
+      addToCartButton.classList.add("add-to-cart-img"); // Assuming you have or will create CSS for this
       addToCartButton.addEventListener("click", () => addToCart(product.id));
+
+      // Set image size
+      addToCartButton.style.width = "40px"; // Set width as per your requirement
+      addToCartButton.style.height = "40px"; // Set height as per your requirement
+      // Set cursor to pointer
+      addToCartButton.style.cursor = "pointer";
 
       const heartIcon = document.createElement("img");
       heartIcon.classList.add("heartIcon");
