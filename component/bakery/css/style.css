@@ -164,14 +164,11 @@ body {
     align-items: center;
   }
   
-  .add-to-cart {
-    background-color: #4CAF50;
-    color: white;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
+  .add-to-cart-img {
+    width: 8%;
     cursor: pointer;
   }
+  
   
   .heartIcon{
     width: 8%;
