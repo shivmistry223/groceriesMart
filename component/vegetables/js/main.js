@@ -297,10 +297,17 @@ document.addEventListener("DOMContentLoaded", function() {
         const buttonsDiv = document.createElement("div");
         buttonsDiv.classList.add("buttons");
 
-        const addToCartButton = document.createElement("button");
-        addToCartButton.classList.add("add-to-cart");
-        addToCartButton.textContent = "Add to Cart";
+        const addToCartButton = document.createElement("img");
+        addToCartButton.src = "C:\\Users\\meetp\\Downloads\\groceriesMart-8563\\groceriesMart-main\\images\\icons\\add-cart.png"; // Adjust path accordingly
+        addToCartButton.alt = "Add to Cart";
+        addToCartButton.classList.add("add-to-cart-img"); // Assuming you have or will create CSS for this
         addToCartButton.addEventListener("click", () => addToCart(product.id));
+
+        // Set image size
+        addToCartButton.style.width = "40px"; // Set width as per your requirement
+        addToCartButton.style.height = "40px"; // Set height as per your requirement
+        // Set cursor to pointer
+        addToCartButton.style.cursor = "pointer";
 
         const heartIcon = document.createElement("img");
         heartIcon.classList.add("heartIcon");
