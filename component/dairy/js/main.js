@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Array of product objects
-    const products = [
+const products = [
         { 
             id: "d1",
             name: "Sealtest Homogenized Milk 3.25 percent",
@@ -91,14 +91,14 @@ document.addEventListener("DOMContentLoaded", function() {
         },
         {
             id: "d9",
-            name: "Great Value Lactose Free Marble Cheddar Cheese",
+            name: "Lactose Free Marble Cheddar Cheese",
             price: "$4.44",
             image: "dairy_images/Lactos free cheese.png",
             origin: "India",
             expiredate: "28/04/2024",
             vitamins: "A, B12, B6",
             weight: "400 gm",
-            description: "Great Value Lactose Free Marble Cheddar Cheese, suitable for those with lactose intolerance. Made from high-quality Indian milk, rich in vitamins A, B12, and B6."
+            description: "It is a Great Value Lactose Free Marble Cheddar Cheese, suitable for those with lactose intolerance. Made from high-quality Indian milk, rich in vitamins A, B12, and B6."
         },
         { 
             id : "d10",
@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function() {
         },
         { 
             id: "d11",
-            name: "Liberté Greek Yogurt 0 percent, Plain, High Protein",
+            name: "Liberté Greek Yogurt, Plain",
             price: "$5.94",
             image: "dairy_images/Greek Yogurt.png",
             origin: "USA",
@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function() {
         },
         {
             id: "d12",
-            name: "BRAR'S PURE DESI GHEE",
+            name: "BRAR'S Pure Desi Ghee",
             price: "$22.97",
             image: "dairy_images/Ghee.png",
             origin: "India",
@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function() {
         },
         {
             id: "d15",
-            name: "GoldEgg Golden D Vitamin D Enriched Large Eggs",
+            name: "Golden D Enriched Large Eggs",
             price: "$8.83",
             image: "dairy_images/Eggs.png",
             origin: "Canada",
@@ -262,10 +262,17 @@ document.addEventListener("DOMContentLoaded", function() {
         const buttonsDiv = document.createElement("div");
         buttonsDiv.classList.add("buttons");
 
-        const addToCartButton = document.createElement("button");
-        addToCartButton.classList.add("add-to-cart");
-        addToCartButton.textContent = "Add to Cart";
+        const addToCartButton = document.createElement("img");
+        addToCartButton.src = "C:\\Users\\meetp\\Downloads\\groceriesMart-8563\\groceriesMart-main\\images\\icons\\add-cart.png"; // Adjust path accordingly
+        addToCartButton.alt = "Add to Cart";
+        addToCartButton.classList.add("add-to-cart-img"); // Assuming you have or will create CSS for this
         addToCartButton.addEventListener("click", () => addToCart(product.id));
+
+        // Set image size
+        addToCartButton.style.width = "40px"; // Set width as per your requirement
+        addToCartButton.style.height = "40px"; // Set height as per your requirement
+        // Set cursor to pointer
+        addToCartButton.style.cursor = "pointer";
 
         const heartIcon = document.createElement("img");
         heartIcon.classList.add("heartIcon");
