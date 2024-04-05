@@ -2,6 +2,8 @@ const $carousel = $(".carousel");
 const $slides = $(".carousel-slide");
 let currentIndex = 0;
 
+
+
 const VEGETABLES = [
   {
     id: "v1",

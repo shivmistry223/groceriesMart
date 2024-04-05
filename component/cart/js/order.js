@@ -211,7 +211,7 @@ const PRODUCTS_LIST = [
   id: "d1",
   name: "Sealtest Homogenized Milk 3.25 percent, ",
   price: 6.89,
-  img: "../dairy/dairy_imagesdairy_images/milk.png"
+  img: "../dairy/dairy_images/milk.png"
 },
 { 
   id: "d2",
@@ -510,7 +510,7 @@ const createOrderItem = (quantity,price,imageurl,itemName)=>{
     // Create paragraph for total
     const totalParagraph = document.createElement('p');
     totalParagraph.classList.add('total');
-    totalParagraph.innerHTML = 'Total : ' + quantity + ' * ' + price + ' = ' + (quantity * price); // Using innerHTML to include HTML tags
+    totalParagraph.innerHTML = 'Total : ' + quantity + ' * ' + price + ' = ' + Math.round((quantity * price)*100)/100; // Using innerHTML to include HTML tags
 
     // Append quantity span and total paragraph to quantity column div
     quantityColumnDiv.appendChild(quantitySpan);

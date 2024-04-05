@@ -211,7 +211,7 @@ const PRODUCTS_LIST = [
   id: "d1",
   name: "Sealtest Homogenized Milk 3.25 percent, ",
   price: 6.89,
-  img: "../dairy/dairy_imagesdairy_images/milk.png"
+  img: "../dairy/dairy_images/milk.png"
 },
 { 
   id: "d2",

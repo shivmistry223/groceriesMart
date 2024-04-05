@@ -256,10 +256,11 @@ const createAddToCartDiv = (id) => {
   quantitySelectorDiv.appendChild(quantityInput);
 
   // Create add-to-cart button
-  const addToCartBtn = document.createElement('button');
-  addToCartBtn.className = 'add-to-cart';
-  addToCartBtn.textContent = 'Add to Cart';
-  addToCartBtn.addEventListener("click", () => addToCart(id));
+  const addToCartButton = document.createElement("img");
+  addToCartButton.src = '../../images/icons/add-cart.png'; 
+  addToCartButton.alt = "Add to Cart";
+  addToCartButton.classList.add("add-to-cart-img"); 
+  addToCartButton.addEventListener("click", () => addToCart(id));
 
   // Create addCartDiv
   const addCartDiv = document.createElement('div');
@@ -268,7 +269,7 @@ const createAddToCartDiv = (id) => {
 
   // Append quantity-selector and add-to-cart button to addCartDiv
   addCartDiv.appendChild(quantitySelectorDiv);
-  addCartDiv.appendChild(addToCartBtn);
+  addCartDiv.appendChild(addToCartButton);
 
   document.getElementsByClassName('product-details')[0].appendChild(addCartDiv)
 
