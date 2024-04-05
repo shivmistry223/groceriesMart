@@ -298,7 +298,7 @@ document.addEventListener("DOMContentLoaded", function() {
         buttonsDiv.classList.add("buttons");
 
         const addToCartButton = document.createElement("img");
-        addToCartButton.src = "C:\\Users\\meetp\\Downloads\\groceriesMart-8563\\groceriesMart-main\\images\\icons\\add-cart.png"; // Adjust path accordingly
+        addToCartButton.src = "../images/icons/shopping-cart.png"; // Adjust path accordingly
         addToCartButton.alt = "Add to Cart";
         addToCartButton.classList.add("add-to-cart-img"); // Assuming you have or will create CSS for this
         addToCartButton.addEventListener("click", () => addToCart(product.id));
