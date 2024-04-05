@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Array of product objects
-    const products = [
+const products = [
         { 
             id: "f1",
             name: "Apple, Gala, Sold in singles, 0.13 - 0.18 kg",
@@ -14,14 +14,14 @@ document.addEventListener("DOMContentLoaded", function() {
         },
         { 
             id: "f2",
-            name: "Healthy Market Organic Avocados, Pack of 4",
+            name: "Healthy Market Organic Avocados",
             price: "$5.98 per Bag",
             image: "fruit_images/avocado.jpg",
             origin: "Canada",
             expiredate: "19/04/2024",
             vitamins: "K , B9, C, A",
-            weight: "around 800 gm",
-            description: "Organic avocados, rich in healthy fats, vitamins, and minerals. Great for making guacamole, salads, or adding to sandwiches. High in vitamin K, B9, C, and A for overall health and well-being."
+            weight: "around 800 gm of 4 pieces",
+            description: "It has Pack of 4 Organic avocados, rich in healthy fats, vitamins, and minerals. Great for making guacamole, salads, or adding to sandwiches. High in vitamin K, B9, C, and A for overall health and well-being."
         },
         {
             id : "f3",
@@ -264,10 +264,17 @@ document.addEventListener("DOMContentLoaded", function() {
         const buttonsDiv = document.createElement("div");
         buttonsDiv.classList.add("buttons");
 
-        const addToCartButton = document.createElement("button");
-        addToCartButton.classList.add("add-to-cart");
-        addToCartButton.textContent = "Add to Cart";
+        const addToCartButton = document.createElement("img");
+        addToCartButton.src = "C:\\Users\\meetp\\Downloads\\groceriesMart-8563\\groceriesMart-main\\images\\icons\\add-cart.png"; // Adjust path accordingly
+        addToCartButton.alt = "Add to Cart";
+        addToCartButton.classList.add("add-to-cart-img"); // Assuming you have or will create CSS for this
         addToCartButton.addEventListener("click", () => addToCart(product.id));
+
+        // Set image size
+        addToCartButton.style.width = "40px"; // Set width as per your requirement
+        addToCartButton.style.height = "40px"; // Set height as per your requirement
+        // Set cursor to pointer
+        addToCartButton.style.cursor = "pointer";
 
         const heartIcon = document.createElement("img");
         heartIcon.classList.add("heartIcon");
