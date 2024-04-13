@@ -1156,4 +1156,46 @@ const PRODUCTS_LIST = [
     img: "../bakery/baakery_images/Red velvet cupcakes.png"
     }
     ];
-export {VEGETABLES_LIST, FRUITS_LIST, DAIRY_LIST, BAKERY_LIST, PRODUCTS_LIST};
+
+const addToCart = (id) => {
+        var quantity = $("#quantity" + id).val();
+        var myObj = { id, quantity };
+        var currData = JSON.parse(localStorage.getItem("cart"));
+      
+        if (currData) {
+          var currObj = currData.find((obj) => obj.id == id);
+      
+          if (currObj) {
+            currObj.quantity = parseInt(currObj.quantity) + parseInt(quantity);
+            const currIndex = currData.findIndex((obj) => obj.id == id);
+            currData[currIndex] = currObj;
+          } else {
+            currData.push(myObj);
+          }
+          localStorage.setItem("cart", JSON.stringify(currData));
+        } else {
+          var myObjStr = JSON.stringify([myObj]);
+          localStorage.setItem("cart", myObjStr);
+        }
+      
+        alert("Item has been added to cart")
+        window.location.href = "../cart/index.html"
+      }
+
+      const saveProduct = (id) => {
+        if ($('#' + id).attr("src") === '../../images/icons/heartfill.png') {
+            $('#' + id).attr("src", '../../images/icons/heart.png');
+          } else {
+            $('#' + id).attr("src", '../../images/icons/heartfill.png');
+          }
+        let likedProducts = JSON.parse(localStorage.getItem('likedProducts')) || [];
+        if (likedProducts.includes(id)) {
+            likedProducts = likedProducts.filter(productId => productId !== id);
+            localStorage.setItem('likedProducts', JSON.stringify(likedProducts));
+        } 
+        else {
+            likedProducts.push(id);
+            localStorage.setItem('likedProducts', JSON.stringify(likedProducts));
+        }
+}
+export {VEGETABLES_LIST, FRUITS_LIST, DAIRY_LIST, BAKERY_LIST, PRODUCTS_LIST, addToCart, saveProduct};

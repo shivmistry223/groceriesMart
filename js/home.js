@@ -92,7 +92,7 @@ function setData() {
   setCarouselData(BAKERY_LIST, "#product4");
   $(".cart").click(function () {
     const productId = $(this).data("product-id");
-    addCart(productId);
+    addCart(productId, 'component/cart/index.html');
   });
 
   setSlick();

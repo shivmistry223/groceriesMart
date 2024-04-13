@@ -1,52 +1,52 @@
-import {DAIRY_LIST} from '../../../js/Products_List.js'
+import {DAIRY_LIST, addToCart,saveProduct} from '../../../js/Products_List.js'
 
 document.addEventListener("DOMContentLoaded", function() {
     // Array of product objects
 
     const productContainer = document.getElementById("product-container");
 
-    function addToCart(id) {
-        var quantity = $("#quantity" + id).val();
-        var myObj = { id, quantity };
-        var currData = JSON.parse(localStorage.getItem("cart"));
+    // function addToCart(id) {
+    //     var quantity = $("#quantity" + id).val();
+    //     var myObj = { id, quantity };
+    //     var currData = JSON.parse(localStorage.getItem("cart"));
       
-        if (currData) {
-          var currObj = currData.find((obj) => obj.id == id);
+    //     if (currData) {
+    //       var currObj = currData.find((obj) => obj.id == id);
       
-          if (currObj) {
-            currObj.quantity = parseInt(currObj.quantity) + parseInt(quantity);
-            const currIndex = currData.findIndex((obj) => obj.id == id);
-            currData[currIndex] = currObj;
-          } else {
-            currData.push(myObj);
-          }
-          localStorage.setItem("cart", JSON.stringify(currData));
-        } else {
-          var myObjStr = JSON.stringify([myObj]);
-          localStorage.setItem("cart", myObjStr);
-        }
+    //       if (currObj) {
+    //         currObj.quantity = parseInt(currObj.quantity) + parseInt(quantity);
+    //         const currIndex = currData.findIndex((obj) => obj.id == id);
+    //         currData[currIndex] = currObj;
+    //       } else {
+    //         currData.push(myObj);
+    //       }
+    //       localStorage.setItem("cart", JSON.stringify(currData));
+    //     } else {
+    //       var myObjStr = JSON.stringify([myObj]);
+    //       localStorage.setItem("cart", myObjStr);
+    //     }
       
-        alert("Item has been added to cart")
-        window.location.href = "../cart/index.html";
-      }
+    //     alert("Item has been added to cart")
+    //     window.location.href = "../cart/index.html";
+    //   }
 
     // Function to handle saving product
-    function saveProduct(id) {
-        if ($('#' + id).attr("src") === '../../images/icons/heartfill.png') {
-            $('#' + id).attr("src", '../../images/icons/heart.png');
-          } else {
-            $('#' + id).attr("src", '../../images/icons/heartfill.png');
-          }
-        let likedProducts = JSON.parse(localStorage.getItem('likedProducts')) || [];
-        if (likedProducts.includes(id)) {
-            likedProducts = likedProducts.filter(productId => productId !== id);
-            localStorage.setItem('likedProducts', JSON.stringify(likedProducts));
-        } 
-        else {
-            likedProducts.push(id);
-            localStorage.setItem('likedProducts', JSON.stringify(likedProducts));
-        }
-    }
+    // function saveProduct(id) {
+    //     if ($('#' + id).attr("src") === '../../images/icons/heartfill.png') {
+    //         $('#' + id).attr("src", '../../images/icons/heart.png');
+    //       } else {
+    //         $('#' + id).attr("src", '../../images/icons/heartfill.png');
+    //       }
+    //     let likedProducts = JSON.parse(localStorage.getItem('likedProducts')) || [];
+    //     if (likedProducts.includes(id)) {
+    //         likedProducts = likedProducts.filter(productId => productId !== id);
+    //         localStorage.setItem('likedProducts', JSON.stringify(likedProducts));
+    //     } 
+    //     else {
+    //         likedProducts.push(id);
+    //         localStorage.setItem('likedProducts', JSON.stringify(likedProducts));
+    //     }
+    // }
 
     // Function to display product details
     function displayProductDetails(product) {

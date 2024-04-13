@@ -1,4 +1,4 @@
-import {DAIRY_LIST} from '../../../js/Products_List.js'
+import {DAIRY_LIST,addToCart} from '../../../js/Products_List.js'
 
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -110,30 +110,30 @@ const createAddToCartDiv = (id) => {
   
   }
   
-  function addToCart(id) {
-    var quantity = $("#quantity" + id).val();
-    var myObj = { id, quantity };
-    var currData = JSON.parse(localStorage.getItem("cart"));
+//   function addToCart(id) {
+//     var quantity = $("#quantity" + id).val();
+//     var myObj = { id, quantity };
+//     var currData = JSON.parse(localStorage.getItem("cart"));
   
-    if (currData) {
-      var currObj = currData.find((obj) => obj.id == id);
+//     if (currData) {
+//       var currObj = currData.find((obj) => obj.id == id);
   
-      if (currObj) {
-        currObj.quantity = parseInt(currObj.quantity) + parseInt(quantity);
-        const currIndex = currData.findIndex((obj) => obj.id == id);
-        currData[currIndex] = currObj;
-      } else {
-        currData.push(myObj);
-      }
-      localStorage.setItem("cart", JSON.stringify(currData));
-    } else {
-      var myObjStr = JSON.stringify([myObj]);
-      localStorage.setItem("cart", myObjStr);
-    }
+//       if (currObj) {
+//         currObj.quantity = parseInt(currObj.quantity) + parseInt(quantity);
+//         const currIndex = currData.findIndex((obj) => obj.id == id);
+//         currData[currIndex] = currObj;
+//       } else {
+//         currData.push(myObj);
+//       }
+//       localStorage.setItem("cart", JSON.stringify(currData));
+//     } else {
+//       var myObjStr = JSON.stringify([myObj]);
+//       localStorage.setItem("cart", myObjStr);
+//     }
   
-    alert("Item has been added to cart")
-    window.location.href = "../cart/index.html";
-  }
+//     alert("Item has been added to cart")
+//     window.location.href = "../cart/index.html";
+//   }
   
 
 
